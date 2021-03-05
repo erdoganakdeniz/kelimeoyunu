@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="timerstyle.css">
+    
+    <title>Kelime Oyunu</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="currentword">_ _ _ _ </h1>
+    </div>
+
+    </div>
+    <h3 class="sorutext"></h3>
+    <div class="container">
+        <div class="setters">
+            <div class="minutes-set">
+                <button data-setter="minutes-plus">+</button>
+                <button data-setter="minutes-minus">-</button>
+            </div>
+            <div class="seconds-set">
+                <button data-setter="seconds-plus">+</button>
+                <button data-setter="seconds-minus">-</button>
+            </div>
+        </div>
+        <div class="circle"> <svg width="300" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(110,110)">
+                <circle r="100" class="e-c-base" />
+                <g transform="rotate(-90)">
+                    <circle r="100" class="e-c-progress" />
+                    <g id="e-pointer">
+                        <circle cx="100" cy="0" r="8" class="e-c-pointer" />
+                    </g>
+                </g>
+            </g>
+        </svg> </div>
+    <div class="controlls">
+        <div class="display-remain-time">00:30</div>
+        <button class="play" id="pause"></button>
+    </div>
+</div>
+    <div class="multi-button">
+        <button class="harfalim">Harf Alabilir miyim Acaba</button>
+        <button class="dogrucevap">Doğru Cevap</button>
+        <button class="siradakisoru">Sıradaki Soru</button>
+    </div>
+    <div><h2 class="puan">0</h2></div>
+    
+           
+    <script src="timerscript.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
+
